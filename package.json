@@ -1,0 +1,42 @@
+{
+  "name": "webrtc-practice",
+  "version": "1.0.0",
+  "description": "WebRTC Practice",
+  "scripts": {
+    "watch:client": "esbuild src/client/main.tsx --bundle --watch --outdir=build/client",
+    "watch:server": "esbuild src/server/main.ts --bundle --watch --outdir=build/server --platform=node --target=node14.15",
+    "eslint": "eslint . --ext .ts,.tsx",
+    "server": "nodemon build/server/main.js"
+  },
+  "author": "int-her",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.13.1",
+    "koa-route": "^3.2.0",
+    "koa-static": "^5.0.0",
+    "koa-websocket": "^6.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.13.4",
+    "@types/koa-route": "^3.2.4",
+    "@types/koa-static": "^4.0.2",
+    "@types/koa-websocket": "^5.0.7",
+    "@types/node": "^16.9.2",
+    "@types/react": "^17.0.21",
+    "@types/react-dom": "^17.0.9",
+    "@typescript-eslint/eslint-plugin": "^4.31.1",
+    "@typescript-eslint/parser": "^4.31.1",
+    "esbuild": "^0.12.28",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-typescript": "^14.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.25.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "typescript": "^4.4.3"
+  }
+}
